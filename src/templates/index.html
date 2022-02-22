@@ -1,10 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YogaAI</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet"  href="./styles.css" />
+    
   </head>
   <body>
-    <h1>Video</h1>
-    <img src="{{ url_for('video_feed') }}">
+    <header>
+    <h1 class="logo">YogaAI</h1>
+    
+    <ul class="nav">
+      <li class="navlink"><a href="#">Home</a></li>
+      <li class="navlink"><a href="#">About</a></li>
+      <li class="navlink"><a href="#">Projects</a></li>
+      <li class="navlink"><a href="#">Contact</a></li>
+  </ul>
+  <div class="burger">
+      <i class="fas fa-bars"></i>
+  </div>
+  </header>
+  <img src="{{ url_for('video_feed') }}">
+  <script src="./index.js"></script>
   </body>
 </html>
