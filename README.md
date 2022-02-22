@@ -1,1 +1,1 @@
-# AI-Yoga-Intructor
+# AI-Yoga-Instructor
