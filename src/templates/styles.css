@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500
+    font-weight: 500;
 }
 
 header {
@@ -106,6 +106,7 @@ header {
   .container {
     position: relative;
     width: 100%;
+    
   }
   
   .image {
@@ -137,8 +138,9 @@ header {
   }
   
   .text {
-    color: white;
+    color: purple;
     font-size: 20px;
+    font-weight: 900;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -146,4 +148,8 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  
+  footer {
+    grid-area: footer;
   }
