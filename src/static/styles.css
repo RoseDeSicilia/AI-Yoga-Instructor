@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
@@ -156,11 +157,20 @@ header {
 
   .lotusbg {
     border: 1px solid black;
+    /* The image used */
     background: url("./flower/lotus4.jpg");
     /* background-size: 100px 80px; */
     /* width:100%; */
-    background-repeat: no-repeat;
+    height: 100%;
     padding: 15px;
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
+  /*Center video */
+  div.center {
+    text-align: center;
+  }
+
