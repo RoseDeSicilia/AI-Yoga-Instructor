@@ -1,8 +1,8 @@
 # SUpervised Machine Learning: Main Detector for Yoga-Ai to compare with training data (train-detector.py)
 # Yoga-Ai Capture Landmarks Training data and export into csv format from images coord.csv
 # Train machine classification model
-# train custom model using scikit learn
-# Team Project: Sparkdev Ai Team Sprint 2022
+# train custom model using scikit sklearn
+# Team Project: Sparkdev Ai Team Spring 2022
 # Last worked on: Yaohua Hu (3.1.2022) Github branch: ai
 # run command: python detector.py
 # press 'q' key to end detector.py process, or for Windows OS: Ctrl+C via cmd prompt
