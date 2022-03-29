@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, Response
 import mediapipe as mp # Import mediapipe
 import cv2 # Import opencv
@@ -9,8 +10,11 @@ mp_drawing = mp.solutions.drawing_utils # Drawing helpers
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_holistic = mp.solutions.holistic # Mediapipe Solutions
 
-with open("src/yoga_pose_detector.pkl", "rb") as f:
-    model = pickle.load(f)
+f = open('src/yoga_pose_detector.pkl', 'rb')
+model = pickle.load(f)
+
+# with open("src/yoga_pose_detector.pkl", "rb") as f:
+#     model = pickle.load(f)
 
 app = Flask(__name__)
 
