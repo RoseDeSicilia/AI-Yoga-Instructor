@@ -65,11 +65,19 @@ def gen_video(page_pose):
                 
                 #print("class: ", body_language_class, ", learning: ", pose)
 
+<<<<<<< HEAD
                 print(body_language_class)
                 print('\n')
                 print(body_language_class)
                 print('\n')
                 print(page_pose)
+=======
+                # print(body_language_class)
+                # print('\n')
+                # print(body_language_class)
+                # print('\n')
+                # print(page_pose)
+>>>>>>> cc266fe150f915dcf12d72ff66e33a72c69c8ba1
                 # if body_language_class.split(' ,') == page_pose:
                 #     print('matches')
                 # Get status box          
