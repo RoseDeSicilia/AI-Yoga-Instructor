@@ -13,7 +13,10 @@ app = Flask(__name__)
 mp_drawing = mp.solutions.drawing_utils # Drawing helpers
 mp_holistic = mp.solutions.holistic # Mediapipe Solutions
 
-with open('yoga_pose_detector.pkl', 'rb') as f:
+# filename = 'src/yoga_pose_detector.pkl'
+# os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+with open('src/yoga_pose_detector.pkl', 'rb') as f:
     model = pickle.load(f)
 
 def gen_video(pose):
