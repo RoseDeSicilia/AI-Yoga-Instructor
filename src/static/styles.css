@@ -225,3 +225,16 @@ header {
     box-sizing: border-box;
   }
 
+  .previous {
+    background: rgba(87, 73, 174, 0.37);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    /* border-color: #46b8da; */
+  }
+  
+  #mybutton {
+    position: fixed;
+    bottom: -4px;
+    right: 10px;
+  }
