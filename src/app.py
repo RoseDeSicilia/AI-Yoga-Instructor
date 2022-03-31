@@ -52,7 +52,7 @@ def gen_video(page_pose):
             mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_holistic.POSE_CONNECTIONS, 
                                     landmark_drawing_spec=mp_drawing_styles.get_default_pose_landmarks_style()
                                     )
-            cv2.rectangle(image, (0,0), (350, 60), (245, 117, 16), -1)
+            # cv2.rectangle(image, (0,0), (350, 60), (245, 117, 16), -1)
             # Export coordinates
             try:
                 # 1. Extract Pose landmarks
@@ -72,12 +72,12 @@ def gen_video(page_pose):
 
                 if(page_pose == body_language_class and round(body_language_prob[np.argmax(body_language_prob)],2) > 0.5):
                 # Display Class
-                    cv2.putText(image, 'CLASS', (95,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-                    cv2.putText(image, body_language_class, (90,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+                    cv2.putText(image, ' ', (95,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+                    cv2.putText(image, body_language_class, (90,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (127, 0, 255), 2, cv2.LINE_AA)
                 else:
                 # Display Class
-                    cv2.putText(image, 'CLASS', (95,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-                    cv2.putText(image, 'waiting...', (90,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+                    cv2.putText(image, ' ', (95,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+                    cv2.putText(image, 'waiting...', (90,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (127, 0, 255), 2, cv2.LINE_AA)
                         
                 # cv2.putText(image, 'CLASS', (95,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
                 # cv2.putText(image, body_language_class, (90,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
