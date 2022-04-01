@@ -185,6 +185,19 @@ header {
     background-size: cover;
     background-position: center;
   }
+
+  .lotusbg3 {
+    border: 1px solid black;
+    /* The image used for background2*/
+    background: url("./flower/buddha.jpg");
+    height: 100%;
+    padding: 15px;
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   /*Center video */
   div.center {
     text-align: center;
@@ -228,7 +241,9 @@ header {
   .previous {
     background: rgba(87, 73, 174, 0.37);
     color: white;
-    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 20px 40px;
     border-radius: 4px;
     /* border-color: #46b8da; */
   }
