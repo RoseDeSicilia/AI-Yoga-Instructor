@@ -13,8 +13,6 @@ mp_holistic = mp.solutions.holistic # Mediapipe Solutions
 f = open('src/yoga_pose_detector.pkl', 'rb')
 model = pickle.load(f)
 
-# with open("src/yoga_pose_detector.pkl", "rb") as f:
-#     model = pickle.load(f)
 
 app = Flask(__name__)
 
